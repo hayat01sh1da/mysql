@@ -1,8 +1,8 @@
 ## 1. Environment
 
-* WSL(Ubuntu 20.04.6 LTS)
-* Docker version 20.10.2 |build 2291f61
-* mysql/mysql-server:8.0
+- WSL(Ubuntu 20.04.6 LTS)
+- Docker version 20.10.2 |build 2291f61
+- mysql/mysql-server:8.0
 
 ## 2. Reference
 
