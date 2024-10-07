@@ -20,7 +20,7 @@ $ docker-compose up -d
 ### 3-2. Create DB, Tables and Insert Records
 
 ```bash
-$ docker-compose exec db mysql -u root -p
+$ docker-compose exec db mysql -u root
 Enter password:
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 163
