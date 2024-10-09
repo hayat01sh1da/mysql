@@ -37,15 +37,6 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 mysql> source setup.sql
 ```
 
-Once you make any change to `setup.sql`, copy it to `/app` directory in Docker container.
-
-```bash
-$ docker ps -a
-CONTAINER ID   IMAGE      COMMAND                  CREATED             STATUS                       PORTS                                     NAMES
-57ae35381e5f   mysql-db   "/entrypoint.sh mysq…"   About an hour ago   Up About an hour (healthy)   0.0.0.0:3306->3306/tcp, 33060-33061/tcp   mysql-db-1
-$ docker cp setup.sql 57ae35381e5f:/app/
-```
-
 ## 4. SQL Introduction
 
 ### 4-1. List Up Databases
