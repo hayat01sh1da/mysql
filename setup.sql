@@ -8,20 +8,20 @@ USE sql_tutorial;
 
 ---- Categories ----
 \! echo "Creating Categories tables...";
-\! echo ""
+\! echo "";
 CREATE TABLE Categories(
   ID int NOT NULL,
   Name varchar(255),
   Description varchar(255),
   PRIMARY KEY (ID)
 );
-\! echo ""
+\! echo "";
 \! echo "Done creating Categories tables🎉";
-\! echo ""
+\! echo "";
 
 ---- Customers ----
 \! echo "Inserting records into Customers tables...";
-\! echo ""
+\! echo "";
 CREATE TABLE Customers(
   ID int NOT NULL,
   FullName varchar(255),
@@ -32,13 +32,13 @@ CREATE TABLE Customers(
   Country varchar(255),
   PRIMARY KEY (ID)
 );
-\! echo ""
+\! echo "";
 \! echo "Done creating Customers tables🎉";
-\! echo ""
+\! echo "";
 
 ---- Employees ----
 \! echo "Creating Employees tables...";
-\! echo ""
+\! echo "";
 CREATE TABLE Employees(
   ID int NOT NULL,
   LastName varchar(255),
@@ -48,26 +48,26 @@ CREATE TABLE Employees(
   Notes longtext,
   PRIMARY KEY (ID)
 );
-\! echo ""
+\! echo "";
 \! echo "Done creating Employees tables🎉";
-\! echo ""
+\! echo "";
 
 ---- Shippers ----
 \! echo "Creating Shippers tables...";
-\! echo ""
+\! echo "";
 CREATE TABLE Shippers(
   ID int NOT NULL,
   Name varchar(255),
   Phone varchar(255),
   PRIMARY KEY (ID)
 );
-\! echo ""
+\! echo "";
 \! echo "Done creating Shippers tables🎉";
-\! echo ""
+\! echo "";
 
 ---- Suppliers ----
 \! echo "Creating Suppliers tables...";
-\! echo ""
+\! echo "";
 CREATE TABLE Suppliers(
   ID int NOT NULL,
   Name varchar(255),
@@ -79,13 +79,13 @@ CREATE TABLE Suppliers(
   Phone varchar(255),
   PRIMARY KEY (ID)
 );
-\! echo ""
+\! echo "";
 \! echo "Done creating Suppliers tables🎉";
-\! echo ""
+\! echo "";
 
 ---- Products ----
 \! echo "Creating Products tables...";
-\! echo ""
+\! echo "";
 CREATE TABLE Products(
   ID int NOT NULL,
   Name varchar(255),
@@ -97,13 +97,13 @@ CREATE TABLE Products(
   FOREIGN KEY (CategoryID) REFERENCES Categories(ID),
   FOREIGN KEY (SupplierID) REFERENCES Suppliers(ID)
 );
-\! echo ""
+\! echo "";
 \! echo "Done creating Products tables🎉";
-\! echo ""
+\! echo "";
 
 ---- Orders ----
 \! echo "Creating Orders tables...";
-\! echo ""
+\! echo "";
 CREATE TABLE Orders(
   ID int NOT NULL,
   OrderDate date,
@@ -115,13 +115,13 @@ CREATE TABLE Orders(
   FOREIGN KEY (EmployeeID) REFERENCES Employees(ID),
   FOREIGN KEY (ShipperID) REFERENCES Shippers(ID)
 );
-\! echo ""
+\! echo "";
 \! echo "Done creating Orders tables🎉";
-\! echo ""
+\! echo "";
 
 ---- OrderDetails ----"
 \! echo "Creating OrderDetails tables...";
-\! echo ""
+\! echo "";
 CREATE TABLE OrderDetails(
   ID int,
   Quantity int,
@@ -131,9 +131,9 @@ CREATE TABLE OrderDetails(
   FOREIGN KEY (OrderID) REFERENCES Orders(ID),
   FOREIGN KEY (ProductID) REFERENCES Products(ID)
 );
-\! echo ""
+\! echo "";
 \! echo "Done creating OrderDetails tables🎉";
-\! echo ""
+\! echo "";
 
 -- Insert Records --
 
@@ -163,13 +163,13 @@ INSERT
 INSERT
   INTO Categories (ID, Name, Description)
   VALUES (8, "Seafood", "Seaweed and fish");
-\! echo ""
+\! echo "";
 \! echo "Done inserting records into Categories tables🎉";
-\! echo ""
+\! echo "";
 
 ---- Customers ----
 \! echo "Inserting records into Customers tables...";
-\! echo ""
+\! echo "";
 INSERT
   INTO Customers (ID, FullName, ContactName, Address, City, ZipCode, Country)
   VALUES (1, "Alfreds Futterkiste", "Maria Anders", "Obere Str. 57", "Berlin", "12209", "Germany");
@@ -443,13 +443,13 @@ INSERT
 INSERT
   INTO Customers (ID, FullName, ContactName, Address, City, ZipCode, Country)
   VALUES (91, "Wolski", "Zbyszek", "ul. Filtrowa 68", "Walla", "01-012", "Poland");
-\! echo ""
+\! echo "";
 \! echo "Done inserting records into Customers tables🎉";
-\! echo ""
+\! echo "";
 
 ---- Employees ----
 \! echo "Inserting records into Employees tables...";
-\! echo ""
+\! echo "";
 INSERT
   INTO Employees (ID, LastName, FirstName, BirthDate, Photo, Notes)
   VALUES (1, "Davolio", "Nancy", "1968-12-08", "EmpID1.pic", "Education includes a BA in psychology from Colorado State University. She also completed (The Art of the Cold Call). Nancy is a member of 'Toastmasters International'.");
@@ -477,13 +477,13 @@ INSERT
 INSERT
   INTO Employees (ID, LastName, FirstName, BirthDate, Photo, Notes)
   VALUES (9, "Dodsworth", "Anne", "1969-07-02", "EmpID9.pic", "Anne has a BA degree in English from St. Lawrence College. She is fluent in French and German.");
-\! echo ""
+\! echo "";
 \! echo "Done inserting records into Employees tables🎉";
-\! echo ""
+\! echo "";
 
 ---- Shippers ----
 \! echo "Inserting records into Shippers tables...";
-\! echo ""
+\! echo "";
 INSERT
   INTO Shippers (ID, Name, Phone)
   VALUES (1, "Speedy Express", "(503) 555-9831");
@@ -494,11 +494,11 @@ INSERT
   INTO Shippers (ID, Name, Phone)
   VALUES (3, "Federal Shipping", "(503) 555-9931");
 \! echo "Done inserting records into Shippers tables🎉";
-\! echo ""
+\! echo "";
 
 ---- Suppliers ----
 \! echo "Inserting records into Suppliers tables...";
-\! echo ""
+\! echo "";
 INSERT
   INTO Suppliers (ID, Name, ContactName, Address, City, ZipCode, Country, Phone)
   VALUES (1, "Exotic Liquid", "Charlotte Cooper", "49 Gilbert St.", "Londona", "EC1 4SD", "UK", "(171) 555-2222");
@@ -586,13 +586,13 @@ INSERT
 INSERT
   INTO Suppliers (ID, Name, ContactName, Address, City, ZipCode, Country, Phone)
   VALUES (29, "Forêts d'érables", "Chantal Goulet", "148 rue Chasseur", "Ste-Hyacinthe", "J2S 7S8", "Canada", "(514) 555-2955");
-\! echo ""
+\! echo "";
 \! echo "Done inserting records into Suppliers tables🎉";
-\! echo ""
+\! echo "";
 
 ---- Products ----
 \! echo "Inserting records into Products tables...";
-\! echo ""
+\! echo "";
 INSERT
   INTO Products (ID, Name, Unit, Price, CategoryID, SupplierID)
   VALUES (1, "Chais", "10 boxes x 20 bags", 18, 1, 1);
@@ -824,13 +824,13 @@ INSERT
 INSERT
   INTO Products (ID, Name, Unit, Price, CategoryID, SupplierID)
   VALUES (77, "Original Frankfurter grüne Soße", "12 boxes", 13, 2, 12);
-\! echo ""
+\! echo "";
 \! echo "Done inserting records into Products tables🎉";
-\! echo ""
+\! echo "";
 
 ---- Orders ----
 \! echo "Inserting records into Orders tables...";
-\! echo ""
+\! echo "";
 INSERT
   INTO Orders (ID, OrderDate, CustomerID, EmployeeID, ShipperID)
   VALUES (1, "1996-07-04", 90, 5, 3);
@@ -3321,13 +3321,13 @@ INSERT
 INSERT
   INTO Orders (ID, OrderDate, CustomerID, EmployeeID, ShipperID)
   VALUES (830, "1998-05-06", 65, 1, 2);
-\! echo ""
+\! echo "";
 \! echo "Done inserting records into Orders tables🎉";
-\! echo ""
+\! echo "";
 
 ---- OrderDetails ----
 \! echo "Inserting records into OrderDetails tables...";
-\! echo ""
+\! echo "";
 INSERT
   INTO OrderDetails (ID, Quantity, OrderID, ProductID)
   VALUES (1, 12, 1, 11);
@@ -9793,5 +9793,5 @@ INSERT
 INSERT
   INTO OrderDetails (ID, Quantity, OrderID, ProductID)
   VALUES (2155, 2, 830, 77);
-\! echo ""
+\! echo "";
 \! echo "Done inserting records into OrderDetails tables🎉";
