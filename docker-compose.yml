@@ -9,6 +9,7 @@ services:
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
     volumes:
+      - .:/app
       - mysql-data:/var/lib/mysql
 volumes:
   mysql-data:
