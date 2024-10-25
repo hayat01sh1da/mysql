@@ -21,12 +21,11 @@ $ docker-compose up -d
 
 ```bash
 $ docker-compose exec db mysql -u root
-Enter password:
 Welcome to the MySQL monitor.  Commands end with ; or \g.
-Your MySQL connection id is 163
-Server version: 8.0.24 MySQL Community Server - GPL
+Your MySQL connection id is 10
+Server version: 8.0.32 MySQL Community Server - GPL
 
-Copyright (c) 2000, 2021, Oracle and/or its affiliates.
+Copyright (c) 2000, 2023, Oracle and/or its affiliates.
 
 Oracle is a registered trademark of Oracle Corporation and/or its
 affiliates. Other names may be trademarks of their respective
