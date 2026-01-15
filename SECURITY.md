@@ -1,6 +1,6 @@
 # Security Policy
 
-## Supported Versions
+## Support Scope
 
 - Security fixes target the latest Docker configuration on `master`.
 - Custom images or diverging compose stacks are out of scope unless the issue reproduces with the documented versions below.
