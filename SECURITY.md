@@ -24,6 +24,6 @@
 If you believe you’ve found a security issue in the Docker setup or SQL assets:
 
 1. Open a private GitHub Security Advisory (preferred) via **Security → Report a vulnerability** and include compose logs, schemas, and repro steps.
-2. Or email `security@project.org` with details about the container build,  configuration, and query samples.
+2. Or email `security@project.org` with details about the container build, configuration, and query samples.
 
 Expect acknowledgement within **3 business days** and progress updates at least every **7 business days** while we investigate.
