@@ -1,7 +1,7 @@
 ## 1. Environment
 
 - WSL(Ubuntu 24.04.3 LTS)
-- Docker 29.2.0
+- Docker 29.2.1
 - mysql/mysql-server:8.0.32
 
 ## 2. Reference
