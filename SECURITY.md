@@ -1,5 +1,3 @@
-# Security Policy
-
 ## Support Scope
 
 - Security fixes target the latest Docker configuration on `master`.
@@ -21,9 +19,7 @@
 
 ## Reporting a Vulnerability
 
-If you believe you’ve found a security issue in the Docker setup or SQL assets:
+Please report issues privately via **GitHub Security Advisory** (preferred) — open through the repository’s **Security → Report a vulnerability** workflow.
 
-1. Open a private GitHub Security Advisory (preferred) via **Security → Report a vulnerability** and include compose logs, schemas, and repro steps.
-2. Or email `security@project.org` with details about the container build, configuration, and query samples.
-
-Expect acknowledgement within **3 business days** and progress updates at least every **7 business days** while we investigate.
+Acknowledgement occurs and status updates follow as soon as possible.  
+After remediation we publish guidance alongside required dependency updates.
