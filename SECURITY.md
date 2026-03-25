@@ -5,12 +5,12 @@
 
 ## Ecosystem & Compatibility
 
-| Component              | Version(s) / Tooling      | Notes |
-| ---------------------- | ------------------------- | ----- |
-| OS baseline            | WSL (Ubuntu 24.04.3 LTS)  | Authoring environment referenced in the README. |
-| Container runtime      | Docker 29.2.1             | Required for building the image. |
-| Database image         | `mysql/mysql-server:8.0.32` | Pulled via `docker-compose.yml`; includes sample schema from `setup.sql`. |
-| Client tooling         | `docker-compose`, MySQL CLI | Use `docker-compose exec db mysql -u root` for local testing. |
+| Component         | Version(s) / Tooling        | Notes                                                                     |
+| ----------------- | --------------------------- | ------------------------------------------------------------------------- |
+| OS baseline       | WSL (Ubuntu 25.10)          | Shared environment across tracks.                                         |
+| Container runtime | Docker 29.2.1               | Required for building the image.                                          |
+| Database image    | `mysql/mysql-server:8.0.32` | Pulled via `docker-compose.yml`; includes sample schema from `setup.sql`. |
+| Client tooling    | `docker-compose`, MySQL CLI | Use `docker-compose exec db mysql -u root` for local testing.             |
 
 ## Backward Compatibility
 
